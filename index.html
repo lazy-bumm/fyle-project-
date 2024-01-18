@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <!-- Add Bootstrap CSS and Font Awesome for loaders -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+   <style>
+        /* Additional styles for layout */
+        .user-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            margin-right: 20px;
+            height: 20%;
+            width: 20%;
+        }
+
+        .user-info {
+            flex: 1;
+        }
+
+        .user-details {
+            margin-top: 20px;
+        }
+
+        .github-link {
+            margin-top: 20px;
+        }
+
+        /* Loader styles */
+        .loader {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>GitHub Repos</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="usernameInput" placeholder="Enter GitHub username">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" id="searchRepo">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="user-info" class="container my-4">
+        <!-- User information  -->
+    </section>
+    <section id="repositories" class="container my-4">
+        <!-- Repositories will be displayed here in boxes -->
+    </section>
+    <!-- Pagination buttons -->
+    <div class="container my-4 text-center">
+        <button id="prevPageButton" class="btn btn-secondary mx-2">Previous Page</button>
+        <button id="nextPageButton" class="btn btn-secondary mx-2">Next Page</button>
+        <!-- Dropdown  -->
+      
+<select class="dropdown d-inline-block" id="perPageSelect">
+    <option value="10">10 per page</option>
+    <option value="20">20 per page</option>
+    <option value="30">30 per page</option>
+    <option value="50">50 per page</option>
+    <option value="100">100 per page</option>
+</select>
+
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
